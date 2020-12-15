@@ -1,0 +1,7 @@
+body{
+    background-color: #262626;
+}
+
+.ui.form label{
+    color: #fff !important;
+}

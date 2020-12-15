@@ -3,16 +3,16 @@ import DropDown from "./DropDown";
 
 const App = () => {
     const options = [{
-        label: "option1",
-        value: "blue"
+        label: "dark Option",
+        value: "#262626"
     },
     {
-        label: "option2",
-        value: "green"
+        label: "light Option",
+        value: "#ccc"
     },
     {
-        label: "option3",
-        value: "yellow"
+        label: "bright option",
+        value: "teal"
     }]
     const [selected, setSelected] = useState(options[0]);
 
