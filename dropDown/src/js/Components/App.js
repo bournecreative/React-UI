@@ -19,6 +19,7 @@ const App = () => {
     return (
         <div>
             <DropDown
+                label="Select to update background color!"
                 selected={selected}
                 onSelectedChange={setSelected}
                 options={options} />
