@@ -1,7 +1,7 @@
-# React Search Component
+# React Drop Down
 
-Search Component accepts input and makes API request to Wikipedia API. Results are displayed below input field.
+Drop down component accepts an array of options to populate menu items.
 
 ## Details
 
-useEffect hook is used to decouple input onChange handler from making API request. Rather, once component rerenders, useEffect detects state change and makes API request. This design pattern ensures the API request is not instantly made when the search term updates. We also have some flexibility to trigger a search when another parameter might change. Ultimately, this method makes it easier to extract this functionality into a reusable function.
+State is used to manage the current dropdown selection and reflects which dropdown items are available for selection. Selection of item will select and close menu. Dropdown menu will also close if any other element is clicked.

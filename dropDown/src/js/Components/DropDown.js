@@ -8,7 +8,6 @@ const DropDown = ({ label, options, selected, onSelectedChange }) => {
     const ref = useRef();
 
     useEffect(() => {
-
         const bodyClick = (e) => {
             if (ref.current && ref.current.contains(e.target)) {
                 return
@@ -20,7 +19,6 @@ const DropDown = ({ label, options, selected, onSelectedChange }) => {
         return (() => {
             document.body.removeEventListener('click', bodyClick)
         })
-
     }, []);
 
     const toggleBackground = (option) => {
